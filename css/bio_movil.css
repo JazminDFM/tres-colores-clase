@@ -1,0 +1,127 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	height:100%;
+	background-image:linear-gradient(to top, #999, #eee);
+}
+.home{ /*El nombre del director y las peliculas*/
+	width: 265px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.7);
+    margin: 20px 0 0 20px;
+    z-index: 1;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.home p{ /*El tamaño de la tipografía y el color del span*/
+	font-weight: 400;
+    font-size: 2em;
+    color: #ef4135;
+    padding-left: 3%;
+}
+span{ /*Color de las pelis del director*/
+	color:#0050a4;
+}
+.home a{
+	text-decoration:none;
+}
+nav{ /*A partir de aqui el menu de navegación*/
+    position: absolute;
+    font-weight: 500;
+    top: 100px;
+    margin: auto;
+}
+nav ul{/*Tamaño del menu nav y margen*/
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 40px auto;
+}
+nav a{ /*Color del texto y tamaño de la tipografia del menu nav*/
+	color:black;
+	font-size:1.2em;
+	text-decoration:none;
+}
+
+.contenedor{/*El contenedor de mi imagen*/
+	display: grid;
+    width: 86%;
+    margin: 194px 23px;
+}
+.contenedor img{
+	width:93%;
+	border: 10px solid white;
+    outline: 1px solid black;
+}
+.contenedor p{
+	margin: 5px 0 10px 0px;
+}
+
+@media screen and (min-width:810px){/*Tablet*/
+	.home{ /*El nombre del director y las peliculas*/
+		width:400px;
+		position:absolute;
+		flex-wrap: nowrap;
+		margin:20px 0 0 20px; /*Margen del top 20, derecha y abajo 0 e izq 20 tambien*/
+	}
+	nav{
+		position: absolute;
+		font-weight: 500;
+   	 	margin: auto;
+		right: 45%;
+		top:0;
+	}
+	nav ul{/*Tamaño del menu nav y margen*/
+		width:480px;
+		margin:90px auto;
+	}
+	nav a{
+		font-size:1em;
+	}
+	.contenedor {
+    margin: 194px 45px;
+	}
+}
+
+@media screen and (min-width:1020px){/*Web*/
+	.contenedor{/*Contenedor del texto*/
+    	width: 36%;
+    	margin: 100px auto;
+    	padding: 20px;
+	}
+	.contenedor img{
+		width:96%;
+	}
+	.home{ /*El nombre del director y las peliculas*/
+		width:400px;
+		position:absolute;
+		flex-wrap: nowrap;
+		margin:20px 0 0 30px; /*Margen del top 20, derecha y abajo 0 e izq 20 tambien*/
+	}
+	.home p{ /*El tamaño de la tipografía y el color del span*/
+    	text-align:center;
+    	padding-left:0;
+	}
+	nav{ /*A partir de aqui el menu de navegación*/
+		top:0;
+		right:0;
+		margin:0;
+	}
+	nav ul{/*Tamaño del menu nav y margen*/
+		width:650px;
+		margin:33px 20px 0 0;
+	}
+	nav a{
+		font-size:1.5em;
+	}
+}

@@ -1,0 +1,159 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	height:100%;
+	background-image:linear-gradient(#ff4135, #bd332a);
+}
+.home{ /*El nombre del director y las peliculas*/
+	width: 265px;
+    position: absolute;
+    top: 0;
+    left: 0;
+	background-color:rgba(255,255,255,0.7);
+    margin: 20px 0 0 20px;
+    z-index: 1;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.home p{ /*El tamaño de la tipografía y el color del span*/
+	font-weight: 400;
+    font-size: 2em;
+    color: #ef4135;
+    padding-left: 3%;
+}
+span{ /*Color de las pelis del director*/
+	color:#0050a4;
+}
+.home a{
+	text-decoration:none;
+}
+nav{ /*A partir de aqui el menu de navegación*/
+    position: absolute;
+    font-weight: 500;
+    top: 100px;
+    margin: auto;
+}
+nav ul{/*Tamaño del menu nav y margen*/
+    width: 330px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 40px auto;
+}
+nav a{ /*Color del texto y tamaño de la tipografia del menu nav*/
+	color:#fff;
+	font-size:1.2em;
+	text-decoration:none;
+	
+}
+.contenedor h1:nth-child(1){/*El contenedor de azul*/
+	color:#bd332a;
+	font-size:2.7em;
+	font-weight:500;
+} 
+.titulo{ /*La posicion de azul*/
+	position:relative;
+}
+.contenedor{/*Contenedor del texto*/
+    display: grid;
+    margin: 40px 32px;
+    width: 80%;
+    padding-top: 40%;
+    color: white;
+}
+p{/*Espacio entre los dos parrafos*/
+	padding:1%;
+	font-size:1.1em;
+}
+
+@media screen and (min-width:810px){/*Tablet*/
+	.home{ /*El nombre del director y las peliculas*/
+		width:400px;
+		position:absolute;
+		flex-wrap: nowrap;
+		margin:20px 0 0 20px; /*Margen del top 20, derecha y abajo 0 e izq 20 tambien*/
+	}
+	nav{
+		position: absolute;
+		font-weight: 500;
+   	 	margin: auto;
+		right: 45%;
+		top:0;
+	}
+	nav ul{/*Tamaño del menu nav y margen*/
+		width:480px;
+		margin:90px auto;
+	}
+	nav a{
+		font-size:1em;
+	}
+	.contenedor{/*Contenedor del texto*/
+		margin: 440px auto;
+		width: 67%;
+    	padding-top: 0;
+    	color: white;
+	}
+	.contenedor h1:nth-child(1){/*El contenedor de azul*/
+		position:absolute;
+		z-index:-1;
+		font-size:12.2em;
+		font-weight:500;
+	}
+	.titulo{
+		position: relative;
+    	right: 8%;
+    	bottom: 196px;
+	}
+}
+@media screen and (min-width:1020px){/*Web*/
+	.contenedor{/*Contenedor del texto*/
+    	margin: 550px auto;
+    	width: 33%;
+    	padding-top:0;
+    	color: white;
+	}
+	.contenedor h1:nth-child(1){/*El contenedor de azul*/
+		position:absolute;
+		z-index:-1;
+		font-size:12.2em;
+		font-weight:500;
+	}
+	.titulo{ /*La posicion de azul*/
+		position: relative;
+    	right: 20%;
+   		bottom: 196px;
+	}
+	p{/*Espacio entre los dos parrafos*/
+		padding:1%;
+		font-size: 1em;
+	}
+	.home{ /*El nombre del director y las peliculas*/
+		width:400px;
+		position:absolute;
+		flex-wrap: nowrap;
+		margin:20px 0 0 30px; /*Margen del top 20, derecha y abajo 0 e izq 20 tambien*/
+	}
+	.home p{ /*El tamaño de la tipografía y el color del span*/
+    	text-align:center;
+    	padding-left:0;
+	}
+	nav{ /*A partir de aqui el menu de navegación*/
+		top:0;
+		right:0;
+		margin:0;
+	}
+	nav ul{/*Tamaño del menu nav y margen*/
+		width:650px;
+		margin:33px 20px 0 0;
+	}
+	nav a{
+		font-size:1.5em;
+	}
+}
